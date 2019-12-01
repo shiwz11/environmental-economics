@@ -7,15 +7,18 @@ output:
   beamer_presentation: 
     latex_engine: xelatex
     template: beamer_default.tex
-    theme: Warsaw
-    colortheme: default
+    theme: cambridgeUS
+    colortheme: whale
     fonttheme: professionalfonts
     highlight: pygments
+    toc: yes
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
+
+
 # 引言
 垃圾分类回收是对垃圾收集处置传统方式的改革， 是对
 垃圾进行有效处置的一种科学管理方法（曲英，2009）。 人们面
