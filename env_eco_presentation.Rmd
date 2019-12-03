@@ -1,6 +1,6 @@
 ---
 title: "大学生垃圾分类回收行为影响因素"
-author: "石威展"
+author: "XXX"
 date: "2019年11月05日"
 fontsize: 10pt
 output: 
