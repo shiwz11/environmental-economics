@@ -1,0 +1,89 @@
+---
+title: "共享经济"
+subtitle: ""
+author: "柳轩文、牟陈莹、潘文、杨万奇、黎军、范少杰、石威展"
+institute: "西方经济学"
+date: "2019/10/15 (updated: `r Sys.Date()`)"
+output:
+  bookdown::html_document2:
+    base_format: xaringan::moon_reader 
+    css: [fc, "SelfDefinedCssEnv.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      ratio: "4:3"
+    includes:
+#      in_header: SelfDefinedCssEnv.css
+      after_body: insert-logo-swufe-soe.html 
+      
+#output: 
+#  xaringan::moon_reader:
+#    css: [fc]
+#    lib_dir: libs
+#    nature:
+#      highlightStyle: github
+#      highlightLines: true
+#      countIncrementalSlides: false
+---
+
+layout: true
+
+background-image: url(caida1.png)
+background-repeat: no-repeat
+background-position: center
+background-size: contain
+---
+
+# 引言
+你猜猜
+<font color=red>“共享经济”</font>一词,虽然在20世纪70年代才被正式提出,但是“共享”模式自古有之。早在原始社会人类就已经发现了共享的重要性,那时人类个体力量是非常薄弱的,无法抵御自然灾害、野兽侵袭,于是就出现了人类族群,大家聚在一起生活,逐步产生了分工,女人负责照看孩子、做饭,男人则外出捕猎、保护族群的安全,而在族群里食物是共享的，领地也是共享的。<br><br>
+
+- **<font color=black size=5>空间限制</font>**<br><br>
+- **<font size=5>信任关系</font>**
+
+---
+d
+
+```{r testTab, fig.cap = '测试表格'}
+knitr::kable(head(iris), format = 'html')
+```
+
+
+
+---
+
+# 一、共享经济的概念
+- **共享经济是指拥有闲置资源的机构或个人有偿让渡资源使用权给他人,让渡者获取回报,分享者利用分享自己的闲置资源创造价值。**<br><br>
+- **其实,共享经济的本质就是整合线下的闲散物品、教育医疗资源、劳动力;也有人说共享经济是人们公平享有社会资源,各自以不同的方式付出收益共享经济红利。**<br>
+
+共享经济的鼻祖罗宾•蔡斯认为,要了解什么是共享经济,首先要看懂三个金句：
+- “共享经济”金句NO1:没有一个房间也可以开酒店,没有一辆车也可以开租车公司,没有一件商品也可以开商场。<br>
+  - 共享经济的精髓在于使用和享用,而不是拥有。<br>
+- “共享经济”金句NO2:你的就是我的,我的也是你的。<br>
+- “共享经济”金句NO3:每个人都知道你是一条狗,但却没人在意。<br>
+  - 这句话的意思是说,在共享经济中,没有人会在意你是谁,你长得怎么样,你有怎样的性格,他们只在意你的<font color=red>产品和信誉</font>。
+
+---
+
+# 一、共享经济的概念
+2015年中国共享经济市场规模约为**19560亿元**,主要集中在金融、生活服务、交通出行、知识技能、房屋短租、生产能力等六大领域;共享经济领域参与提供服务者约为**5000万**人,参与共享经济活动的总人数保守估计也有超过**5亿**人;预计未来五年共亨经济年均增长速度在**40%**左右,到2020年市场规模占GDP比重将达到**10%**以上,未来十年中国共享经济领域有望出现**5~10**家巨无霸平台型企业。<br><br>
+<h4 style="color:Crimson">我国发展比较好的共享经济企业：</h4>
+- 滴滴快车<br>
+- 猪八戒网<br>
+- 木鸟短租<br>
+- 瓜子网<br>
+- 阿姨帮<br>
+- 疯狂老师<br>
+- 河狸家<br>
+
+
+---
+
+```{theorem, pyth, name="Pythagorean theorem"}
+For a right triangle, if $c$ denotes the length of the hypotenuse
+and $a$ and $b$ denote the lengths of the other two sides, we have
+$$a^2 + b^2 = c^2$$
+```
+
