@@ -5,8 +5,7 @@ author: "柳轩文、牟陈莹、潘文、杨万奇、黎军、范少杰、石�
 institute: "西方经济学"
 date: "2019/10/15 (updated: `r Sys.Date()`)"
 output:
-  bookdown::html_document2:
-    base_format: xaringan::moon_reader 
+  xaringan::moon_reader: 
     css: [fc, "SelfDefinedCssEnv.css"]
     lib_dir: libs
     nature:
@@ -14,10 +13,11 @@ output:
       highlightLines: true
       countIncrementalSlides: false
       ratio: "4:3"
-    includes:
+#    includes:
+#      in_header:
+#        - 'xaringan-toc-demo.html'
 #      in_header: SelfDefinedCssEnv.css
-      after_body: insert-logo-swufe-soe.html 
-      
+#      after_body: insert-logo-swufe-soe.html 
 #output: 
 #  xaringan::moon_reader:
 #    css: [fc]
@@ -30,10 +30,13 @@ output:
 
 layout: true
 
-background-image: url(caida1.png)
+background-image: url(caida-demo.png)
 background-repeat: no-repeat
+background-size: cover
 background-position: center
-background-size: contain
+</br>
+</br>
+</br>
 ---
 
 # 引言
@@ -54,6 +57,8 @@ knitr::kable(head(iris), format = 'html')
 
 ---
 
+calss: middle
+
 # 一、共享经济的概念
 - **共享经济是指拥有闲置资源的机构或个人有偿让渡资源使用权给他人,让渡者获取回报,分享者利用分享自己的闲置资源创造价值。**<br><br>
 - **其实,共享经济的本质就是整合线下的闲散物品、教育医疗资源、劳动力;也有人说共享经济是人们公平享有社会资源,各自以不同的方式付出收益共享经济红利。**<br>
@@ -67,7 +72,9 @@ knitr::kable(head(iris), format = 'html')
 
 ---
 
-# 一、共享经济的概念
+</br>
+
+
 2015年中国共享经济市场规模约为**19560亿元**,主要集中在金融、生活服务、交通出行、知识技能、房屋短租、生产能力等六大领域;共享经济领域参与提供服务者约为**5000万**人,参与共享经济活动的总人数保守估计也有超过**5亿**人;预计未来五年共亨经济年均增长速度在**40%**左右,到2020年市场规模占GDP比重将达到**10%**以上,未来十年中国共享经济领域有望出现**5~10**家巨无霸平台型企业。<br><br>
 <h4 style="color:Crimson">我国发展比较好的共享经济企业：</h4>
 - 滴滴快车<br>
@@ -86,4 +93,69 @@ For a right triangle, if $c$ denotes the length of the hypotenuse
 and $a$ and $b$ denote the lengths of the other two sides, we have
 $$a^2 + b^2 = c^2$$
 ```
+
+---
+
+## 表格
+
+```{r testTable, echo = F}
+knitr::kable(
+  head(mtcars[, 1:8]),
+  caption = '我是测试表格'
+)
+```
+
+这儿是对表格的引用表格\@ref(tab:testTable)
+
+---
+
+## 脚注
+
+这里是脚注^[text]
+
+
+---
+
+
+## 图
+
+
+```{r label = fig-1, echo = F, fig.cap = "信任率的影响因素", fig.align = "center", out.width='80%'}
+knitr::include_graphics(rep("caida1.png", 1))
+```
+
+
+---
+
+## 公式
+
+
+这里是公式
+
+输出word时的公式编号和交叉引用看来是个难题
+
+
+\begin{equation} 
+  f\left(k\right) = \binom{n}{k} p^k\left(1-p\right)^{n-k}
+  (\#eq:binom)
+\end{equation}
+
+$$
+\begin{equation} \label{eq:2}
+p_1 = p_2
+\end{equation}
+$$
+
+\ref{eq:2}
+
+\@ref(eq:binom)
+
+
+<!--
+看来bookdown的特性在xaringan里根本发挥不出来
+pagedown::chrome_print('xaringan_presentation_logo_bgp_test.html', output = 'xinlei.pdf')
+此命令可以把xaringan转换成pdf
+-->
+
+
 
