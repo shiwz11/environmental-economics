@@ -1,7 +1,7 @@
 ---
 title: "共享经济"
 subtitle: ""
-author: "柳轩文、牟陈莹、潘文、杨万奇、黎军、范少杰、石威展"
+author: "author1、author2"
 institute: "西方经济学"
 date: "2019/10/15 (updated: `r Sys.Date()`)"
 output:
@@ -13,11 +13,11 @@ output:
       highlightLines: true
       countIncrementalSlides: false
       ratio: "4:3"
-#    includes:
+    includes:
 #      in_header:
 #        - 'xaringan-toc-demo.html'
 #      in_header: SelfDefinedCssEnv.css
-#      after_body: insert-logo-swufe-soe.html 
+      after_body: insert-logo-swufe-soe.html 
 #output: 
 #  xaringan::moon_reader:
 #    css: [fc]
@@ -26,14 +26,15 @@ output:
 #      highlightStyle: github
 #      highlightLines: true
 #      countIncrementalSlides: false
----
 
+---
 layout: true
 
 background-image: url(caida-demo.png)
 background-repeat: no-repeat
 background-size: cover
 background-position: center
+
 </br>
 </br>
 </br>
